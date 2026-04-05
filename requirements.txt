@@ -1,1 +1,30 @@
 streamlit>=1.28.0
+numpy>=2.0.0
+pandas>=2.0.0
+scipy>=1.10.0
+pygame>=2.1.0
+
+#rough stuff- while attempts > 0:
+ # print('\nCurrent word: ' + ' '.join(guessedword), flush=True)
+
+  #guess = input('Guess a letter: ').strip().lower()
+
+  #if len(guess) != 1 or not guess.isalpha():
+   # print('Please enter a single letter.', flush=True)
+    #continue
+
+  #if guess in word:
+   # for i in range(len(word)):
+    #  if word[i] == guess:
+     #   guessedword[i] = guess
+    #print('Great guess!', flush=True)
+  #else:
+   # attempts -= 1
+    #print('Wrong guess! Attempts left: ' + str(attempts), flush=True)
+
+ # if '_' not in guessedword:
+  #  print('\nCongratulations!! You guessed the word: ' + word, flush=True)
+   # break
+
+#if attempts == 0 and '_' in guessedword:
+ # print('\nYou\'ve run out of attempts! The word was: ' + word, flush=True)
