@@ -42,7 +42,7 @@ st.markdown(
 st.sidebar.title('Game Menu')
 selected_game = st.sidebar.radio(
     'Choose a game',
-    ['Home', 'The Word Guessing Game', 'Snake (Coming Soon)', 'Memory Match (Coming Soon)'],
+    ['Home', 'Word Guessing', 'Snake (Coming Soon)'],
 )
 
 st.sidebar.markdown('---')
@@ -57,7 +57,7 @@ if selected_game == 'Home':
             """
             <div class='game-card'>
                 <h3>Word Guessing</h3>
-                <p>Guess the hidden word one letter at a time. Choose from easy, medium, or hard word banks.</p>
+                <p>Guess the hidden word, one letter at a time. Choose from easy, medium, or hard word banks.</p>
                 <p><strong>Ready to play?</strong></p>
             </div>
             """,
@@ -68,7 +68,7 @@ if selected_game == 'Home':
             """
             <div class='game-card'>
                 <h3>Other Games</h3>
-                <p>Explore more game ideas like Snake and Memory Match. These are coming soon!</p>
+                <p>Explore more game ideas like Snake. More games will be added soon!</p>
                 <p>For now, select a game on the left to launch it.</p>
             </div>
             """,
@@ -83,3 +83,5 @@ else:
     if 'Snake' in selected_game:
         st.write('A C++ version of Snake is available in the workspace as `snake.cpp`.')
     st.write('Check back later for more interactive game experiences.')
+
+st.markdown("<div style='text-align: center; margin-top: 2rem; color: #999; font-size: 0.85rem;'>Made with ❤️ • Game Hub • 2026</div>", unsafe_allow_html=True)
