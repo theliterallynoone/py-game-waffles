@@ -84,4 +84,5 @@ else:
         st.write('A C++ version of Snake is available in the workspace as `snake.cpp`.')
     st.write('Check back later for more interactive game experiences.')
 
-st.markdown("<div style='text-align: center; margin-top: 2rem; color: #999; font-size: 0.85rem;'>Made with ❤️ • Game Hub • 2026</div>", unsafe_allow_html=True)
+if selected_game != 'Word Guessing':
+    st.markdown("<div style='text-align: center; margin-top: 2rem; color: #999; font-size: 0.85rem;'>Made with ❤️ • Game Hub • 2026</div>", unsafe_allow_html=True)
