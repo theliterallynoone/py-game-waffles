@@ -25,6 +25,12 @@ st.markdown(
     .title-container {
         text-align: center;
         margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .title-container h1 {
+        white-space: nowrap;
     }
     
     .word-display {
@@ -166,7 +172,7 @@ if 'word' not in st.session_state:
 # Header
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.markdown("<div class='title-container'><h1>🎮 Word Guess</h1></div>", unsafe_allow_html=True)
+    st.markdown("<div class='title-container'><h1>🎮 Can you guess it?</h1></div>", unsafe_allow_html=True)
 
 # Difficulty selector
 difficulty_col1, difficulty_col2, difficulty_col3 = st.columns([1, 1, 1])
@@ -315,4 +321,4 @@ with col1:
 with col2:
     st.markdown(f"<div style='text-align: center;'><p style='color: #666; font-size: 0.9rem;'>Losses: <strong style='color: #d32f2f;'>{st.session_state.games_lost}</strong></p></div>", unsafe_allow_html=True)
 
-st.markdown("<div style='text-align: center; margin-top: 2rem; color: #999; font-size: 0.85rem;'>Made with ❤️ • Word Guessing Game 2026</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; margin-top: 2rem; color: #999; font-size: 0.85rem;'>Made with ❤️ • Word Guessing Game • 2026</div>", unsafe_allow_html=True)
