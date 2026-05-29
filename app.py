@@ -42,11 +42,10 @@ st.markdown(
 st.sidebar.title('Game Menu')
 selected_game = st.sidebar.radio(
     'Choose a game',
-    ['Home', 'Word Guessing', 'Snake (Coming Soon)', 'Memory Match (Coming Soon)'],
+    ['Home', 'The Word Guessing Game', 'Snake (Coming Soon)', 'Memory Match (Coming Soon)'],
 )
 
 st.sidebar.markdown('---')
-st.sidebar.write('More games will be added here soon!')
 
 if selected_game == 'Home':
     st.markdown('<div class="home-title"><h1>🎮 Welcome to the Game Hub</h1></div>', unsafe_allow_html=True)
